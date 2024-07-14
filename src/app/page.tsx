@@ -20,6 +20,7 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import Photos from '@/components/Photos'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -182,18 +183,20 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+      <Container className="mt-24 sm:mt-32 md:mt-24">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-green-900 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-900 [text-wrap:balance] sm:text-7xl">
+            Connecting agricultural market players
           </h1>
-          <p className="mt-6 text-xl text-green-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+          <p className="mt-6 text-xl text-neutral-600">
+            Improve the livelihoods of rural communities by facilitating the trade
+            of agricultural products and improving the access to agricultural
+            market information.
           </p>
         </FadeIn>
       </Container>
+
+      <Photos />
 
       <Clients />
 
