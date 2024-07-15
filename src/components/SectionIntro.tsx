@@ -43,7 +43,7 @@ export function SectionIntro({
               smaller
                 ? 'text-2xl font-semibold'
                 : 'text-4xl font-medium sm:text-5xl',
-              invert ? 'text-white' : 'text-neutral-950',
+              invert ? 'text-white' : 'text-green-950',
             )}
           >
             {title}

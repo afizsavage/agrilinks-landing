@@ -62,66 +62,6 @@ function Clients() {
   )
 }
 
-function CaseStudies({
-  caseStudies,
-}: {
-  caseStudies: Array<MDXEntry<CaseStudy>>
-}) {
-  return (
-    <>
-      <SectionIntro
-        title="Connecting small scale-farmers and producers to potential buyers"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          Depending on the digital equipment and digital aptitudes, users can
-          access marketplace information and contact each other via USSD and
-          SMS or through the online marketplace
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {caseStudies.map((caseStudy) => (
-            <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-green-900/5 transition hover:bg-green-50 sm:p-8">
-                <h3>
-                  <Link href={caseStudy.href}>
-                    <span className="absolute inset-0 rounded-3xl" />
-                    <Image
-                      src={caseStudy.logo}
-                      alt={caseStudy.client}
-                      className="h-16 w-16"
-                      unoptimized
-                    />
-                  </Link>
-                </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-green-900">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
-                    className="font-semibold"
-                  >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
-                  <span className="text-green-300" aria-hidden="true">
-                    /
-                  </span>
-                  <span>Case study</span>
-                </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-green-900">
-                  {caseStudy.title}
-                </p>
-                <p className="mt-4 text-base text-green-600">
-                  {caseStudy.description}
-                </p>
-              </article>
-            </FadeIn>
-          ))}
-        </FadeInStagger>
-      </Container>
-    </>
-  )
-}
-
 function Services() {
   return (
     <>
@@ -180,7 +120,7 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-24">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-900 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-green-950 [text-wrap:balance] sm:text-7xl">
             Connecting agricultural market players
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
