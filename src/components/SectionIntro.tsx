@@ -29,7 +29,7 @@ export function SectionIntro({
               <span
                 className={clsx(
                   'mb-6 block font-display text-base font-semibold',
-                  invert ? 'text-white' : 'text-neutral-950',
+                  invert ? 'text-white' : 'text-green-900',
                 )}
               >
                 {eyebrow}
