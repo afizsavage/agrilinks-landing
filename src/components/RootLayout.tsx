@@ -74,7 +74,7 @@ function Header({
             invert={invert}
             filled={logoHovered}
           />
-          <Logo />
+          <Logo invert={invert} />
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="https://portal.agrilinks.sl" invert={invert} target='_blank'>

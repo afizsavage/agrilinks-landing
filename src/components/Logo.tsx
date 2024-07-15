@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 import AgrilinksLogo from '@/images/new_logo.png'
+import AgrilinksWhiteLogo from '@/images/white-logo.png'
 
 export function Logomark({
   invert = false,
@@ -43,13 +44,20 @@ export function Logomark({
   )
 }
 
-export function Logo() {
+export function Logo(props: { invert: boolean }) {
   return (
     <div className='hidden  relative sm:block h-8 w-32'>
-      <Image
+      {props.invert ? (<Image
         alt='agrilinks-logo'
-        fill={true} src={AgrilinksLogo}
-        className='static' />
+        fill={true} src={AgrilinksWhiteLogo}
+        className='static' />) : (
+        <Image
+          alt='agrilinks-logo'
+          fill={true} src={AgrilinksLogo}
+          className='static' />
+      )}
+
+
     </div>
   )
 }
