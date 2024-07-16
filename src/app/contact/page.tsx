@@ -55,7 +55,7 @@ function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
       <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h2 className="font-display text-base font-semibold text-green-900">
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
@@ -86,7 +86,7 @@ function ContactForm() {
           </div>
         </div>
         <Button type="submit" className="mt-10">
-          Let’s work together
+          Connect with us
         </Button>
       </form>
     </FadeIn>
@@ -96,7 +96,7 @@ function ContactForm() {
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      <h2 className="font-display text-base font-semibold text-green-900">
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
@@ -107,7 +107,7 @@ function ContactDetails() {
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h2 className="font-display text-base font-semibold text-green-900">
           Email us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
@@ -142,13 +142,13 @@ function ContactDetails() {
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  description: 'Connect with us. We can’t wait to hear from you.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
+      <PageIntro eyebrow="Contact us" title="Connect with us">
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 
