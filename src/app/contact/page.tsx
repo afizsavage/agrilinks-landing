@@ -86,7 +86,7 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-green-900">
-        Our offices
+        Our office
       </h2>
       <p className="mt-6 text-base text-neutral-600">
         Prefer doing things in person? We don’t but we have to list our
