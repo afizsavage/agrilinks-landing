@@ -35,22 +35,6 @@ function TextInput({
   )
 }
 
-function RadioInput({
-  label,
-  ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
-  return (
-    <label className="flex gap-x-3">
-      <input
-        type="radio"
-        {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none checked:border-[0.5rem] checked:border-neutral-950 focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
-      />
-      <span className="text-base/6 text-neutral-950">{label}</span>
-    </label>
-  )
-}
-
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
@@ -75,7 +59,7 @@ function ContactForm() {
           <TextInput label="Message" name="message" />
         </div>
         <Button type="submit" className="mt-10">
-          Connect with us
+          Contact us
         </Button>
       </form>
     </FadeIn>
@@ -97,15 +81,15 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-green-900">
-          Email us
+          Contact Details
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
-          ].map(([label, email]) => (
+            ['Administrative', 'johann.lieberich@giz.de', '+23276398512'],
+            ['Technical', 'Hassans.konneh@giz.de', '+23276852729'],
+          ].map(([label, email, phoneNumber]) => (
             <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-green-900">{label}</dt>
               <dd>
                 <Link
                   href={`mailto:${email}`}
@@ -114,16 +98,17 @@ function ContactDetails() {
                   {email}
                 </Link>
               </dd>
+              <dd>
+                <Link
+                  href={`tel:${phoneNumber}`}
+                  className="text-neutral-600 hover:text-neutral-950"
+                >
+                  {phoneNumber}
+                </Link>
+              </dd>
             </div>
           ))}
         </dl>
-      </Border>
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
-        </h2>
-        <SocialMedia className="mt-6" />
       </Border>
     </FadeIn>
   )
