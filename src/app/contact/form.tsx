@@ -1,8 +1,7 @@
 "use client"
 
 import { ChangeEvent, FormEvent, useState } from 'react'
-import emailjs from 'emailjs-com';
-
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
@@ -125,14 +124,23 @@ const ContactForm: React.FC = () => {
             };
 
             await emailjs.send(
-                process.env.SERVICE_ID || '',
-                process.env.TEMPLATE_ID || ' ',
+                'service_0nndo3v',
+                'template_dpe2kzp',
                 emailParams,
-                process.env.EMAILJS_USER_ID || ''
+                {
+                    publicKey: 'oMC8bByMnKHaptbGN',
+                },
             );
-            setIsSubmitted(true);
-        } catch (error) {
-            setSubmitError('Failed to send the message. Please try again later.');
+            console.log('SUCCESS!');
+        } catch (err) {
+            if (err instanceof EmailJSResponseStatus) {
+                console.log('EMAILJS FAILED...', err);
+                setSubmitError('Failed to send the message. Please try again later.');
+
+                return;
+            }
+
+            console.log('ERROR', err);
         } finally {
             setIsSubmitting(false);
         }

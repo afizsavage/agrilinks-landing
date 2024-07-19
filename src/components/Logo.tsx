@@ -46,7 +46,7 @@ export function Logomark({
 
 export function Logo(props: { invert?: boolean }) {
   return (
-    <div className='hidden  relative sm:block h-8 w-32'>
+    <div className='relative sm:block h-8 w-32'>
       {props.invert ? (<Image
         alt='agrilinks-logo'
         fill={true} src={AgrilinksWhiteLogo}
