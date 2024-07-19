@@ -108,17 +108,17 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            We want to enable every Sierra Leoneans to easily identify and locate
-            agricultural produce sellers. It aims at increasing the profits of
+            We want to enable every Sierra Leonean to easily identify and locate
+            agricultural produce sellers. We are aiming to increas the profits of
             smallholder farmers by leapfrogging market participants and enabling a
             larger outreach, while offering transparent market information for farmers
-            to price their produce. This platform, bringing together suppliers
-            of agricultural products and buyers, is meant to improve the supply
+            to price their produce. We are bringing together suppliers
+            of agricultural products and buyers to improve the supply
             chain and boost the sales of local agricultural production in Sierra Leone.
           </p>
           <p>
-            We want to cater for the Sierra Leoneans population, farmers, vendors and
-            consumers, through different channels. It encompasses  an Unstructured
+            We want to cater for the Sierra Leonean population, farmers, vendors and
+            consumers, through different channels. Leveraging Unstructured
             Supplementary Service Data (USSD), which can be accessed by any low-end phone
             in a telecom coverage; a short messaging system (SMS); and a web-based market
             information system. These channels offer smallholder farmers the platform to
