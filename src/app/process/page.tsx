@@ -1,19 +1,12 @@
 import { type Metadata } from 'next'
-
-import { Blockquote } from '@/components/Blockquote'
-import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { GridList, GridListItem } from '@/components/GridList'
-import { GridPattern } from '@/components/GridPattern'
-import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
-import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+
+import image3 from '@/images/photos/image-3.jpg'
+import image4 from '@/images/photos/image-4.jpg'
+import image5 from '@/images/photos/image-5.jpg'
 
 function Section({
   title,
@@ -55,7 +48,7 @@ function Section({
 
 export function Discover() {
   return (
-    <Section title="Accessing market price information" image={{ src: imageWhiteboard }}>
+    <Section title="Accessing market price information" image={{ src: image5 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Agrilinks collects price information from regional markets on a daily basis.
@@ -83,7 +76,7 @@ export function Discover() {
 
 export function Build() {
   return (
-    <Section title="Putting up produce for sale" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Putting up produce for sale" image={{ src: image4, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Users that produce agricultural goods can put them up for sell on the platform.
@@ -111,7 +104,7 @@ export function Build() {
 
 export function Deliver() {
   return (
-    <Section title="Getting in touch with agri produce sellers" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Getting in touch with agri produce sellers" image={{ src: image3, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Users can enquire about produces up for sell in a certain area and obtain the
