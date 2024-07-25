@@ -23,14 +23,7 @@ export default async function Community() {
 
     return (
         <>
-            {/* <PageIntro eyebrow="Community" title=""> */}
             <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40')}>
-                <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
-                    <GridPattern
-                        className="absolute inset-0 h-full w-full fill-green-100 stroke-green-900/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-                        yOffset={-270}
-                    />
-                </div>
                 <SectionIntro title={'Community'} smaller>
                     <p>
                         The Agrilinks user community is made up of sierra leoneans
