@@ -73,7 +73,7 @@ export function PageLinks({
     <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-green-100 stroke-green-900/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -84,11 +84,43 @@ export function PageLinks({
 
       <Container className={intro ? 'mt-24' : 'mt-16'}>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-          {pages.map((page) => (
-            <FadeIn key={page.href}>
-              <PageLink page={page} />
-            </FadeIn>
-          ))}
+          {/* {pages.map((page) => ( */}
+          <FadeIn >
+            <article >
+              <Border
+                position="left"
+                className="relative flex flex-col items-start pl-8"
+              >
+                <p className="mt-2.5 text-base text-neutral-600">
+                  Agrilinks uses SMS to communicate with registered members.
+                  Users receive text messages when another user puts up an offer for the
+                  main products of interest and for the chiefdom where they are located.
+                  They also receive contact information of sellers whose products they
+                  are interested in. Users can manage their profiles and their offers
+                  through the USSD or the online platform and receive confirmation text
+                  messages for their activities
+                </p>
+              </Border>
+            </article>
+          </FadeIn>
+          <FadeIn >
+            <article >
+              <Border
+                position="left"
+                className="relative flex flex-col items-start pl-8"
+              >
+                <p className="mt-2.5 text-base text-neutral-600">
+                  Agrilinks users can register from the web (insert link) or via USSD
+                  using the short code *2474#. To register, the user will be asked to
+                  provide their name, their location (district and chiefdom) and the
+                  produce that they are most interested in dealing in. Once registered,
+                  the user can access all our services
+                </p>
+              </Border>
+            </article>
+          </FadeIn>
+
+          {/* ))} */}
         </FadeInStagger>
       </Container>
     </div>
