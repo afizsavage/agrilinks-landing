@@ -8,6 +8,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageFarm from '@/images/farm.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 import Photos from '@/components/Photos'
+import { Build, Deliver, Discover } from './process/page'
 
 function Services() {
   return (
@@ -65,7 +66,7 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-24">
+      <Container className="sm:mt-40 md:mt-40">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-green-950 [text-wrap:balance] sm:text-7xl">
             Connecting agricultural market players
@@ -77,8 +78,22 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-      <Photos />
-      <Services />
+      {/* <Photos /> */}
+      <SectionIntro
+        eyebrow="Services"
+        title=""
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        {/* <p>
+          We help you access marketplace information and connect with market players
+          via USSD, SMS, or our online marketplace
+        </p> */}
+      </SectionIntro>
+      <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-0 sm:space-y-0 lg:mt-40 lg:space-y-40">
+        <Discover />
+        <Build />
+        <Deliver />
+      </div>
     </>
   )
 }
