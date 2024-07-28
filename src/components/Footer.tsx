@@ -10,7 +10,7 @@ const navigation = [
     title: 'Services',
     links: [
       { title: 'Services', href: '/services' },
-      { title: 'Comunity', href: '/community' },
+      { title: 'Community', href: '/community' },
       { title: 'Register / Log In ', href: '/register-login' },
     ],
   },
