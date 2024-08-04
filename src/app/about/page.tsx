@@ -1,9 +1,7 @@
 import { type Metadata } from 'next'
 
-import { ContactSection } from '@/components/ContactSection'
 import { PageIntro } from '@/components/PageIntro'
 import { loadArticles } from '@/lib/mdx'
-import Blog from '../blog/page'
 import { PageLinks } from '@/components/PageLinks'
 
 export const metadata: Metadata = {
@@ -17,14 +15,15 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About Us" title="Connecting agricultural market players">
+      <PageIntro eyebrow="About Us" title="A Platform for Farmers and Buyers to trade agricultural products
+          and follow market trends">
         <p>
           Improve the livelihoods of rural communities by facilitating the trade of
           agricultural products and improving the access to agricultural market information.
         </p>
       </PageIntro>
       <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className="mt-24 sm:mt-32 lg:mt-0"
         title="Why Agrilinks"
         intro="Small-scale farmers in Sierra Leone depend mainly on the conventional 
         market systems, like the regional luma markets or on market intermediaries  
