@@ -9,7 +9,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { Container } from '@/components/Container'
 
 import farm from '@/images/farm.jpg'
-import farmer from '@/images/photos/image-1.jpg'
+import farmer from '@/images/farmers_community.jpg'
 
 export const metadata: Metadata = {
     title: 'Community',
