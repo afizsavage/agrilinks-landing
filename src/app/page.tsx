@@ -39,7 +39,7 @@ function Section({
         <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/Section:order-first">
           <FadeIn>
             <div
-              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950 after:content-[counter(Section,decimal-leading-zero)]"
+              className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_']"
               aria-hidden="true"
             />
             <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
@@ -133,60 +133,6 @@ function Deliver() {
   )
 }
 
-// export const metadata: Metadata = {
-//   title: 'Our Services',
-//   description:
-//     'All our services are accessible for Orange numbers from USSD through *2474# and on the online platform, after registration with Agrilinks.',
-// }
-
-
-
-function Services() {
-  return (
-    <>
-      <SectionIntro
-        eyebrow="Services"
-        title="Connecting small scale-farmers and producers to potential buyers"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          We help you access marketplace information and connect with market players
-          via USSD, SMS, or our online marketplace
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={imageFarm}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
-            </FadeIn>
-          </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Accessing market price information">
-              We collects price information from regional markets on a daily basis.
-              Our enumerators are collecting this information for bulk and retail
-              sales for more than 20 produces across Sierra Leone.
-            </ListItem>
-            <ListItem title="Putting up produce for sale">
-              Create an advert for your product by selecting the crop,
-              quantity, and price. The listing and your necessary contact
-              information will be accessible to potential buyers.
-            </ListItem>
-            <ListItem title="Getting in touch with farmers">
-              Enquire about products for sale in a particular
-              region and obtain the contact information of the sellers advertising them.
-            </ListItem>
-          </List>
-        </div>
-      </Container>
-    </>
-  )
-}
-
 export const metadata: Metadata = {
   description:
     'We are a marketplace for connecting small scale-farmers and producers to potential buyers',
@@ -209,17 +155,6 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-      {/* <Photos /> */}
-      <SectionIntro
-        eyebrow="Services"
-        title=""
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        {/* <p>
-          We help you access marketplace information and connect with market players
-          via USSD, SMS, or our online marketplace
-        </p> */}
-      </SectionIntro>
       <div className="mt-24 space-y-24 [counter-reset:Section] sm:mt-0 sm:space-y-0 lg:mt-40 lg:space-y-40">
         <Discover />
         <Build />
