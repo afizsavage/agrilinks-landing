@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     'All our services are accessible for Orange numbers from USSD through *2474# and on the online platform, after registration with Agrilinks',
 }
 
+
+
 export default async function About() {
   let blogArticles = (await loadArticles()).slice(0, 2)
 
