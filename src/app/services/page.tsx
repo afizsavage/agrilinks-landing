@@ -1,21 +1,12 @@
 import { type Metadata } from 'next'
 
-import { ContactSection } from '@/components/ContactSection'
-import { PageIntro } from '@/components/PageIntro'
-import { loadArticles } from '@/lib/mdx'
-import Blog from '../blog/page'
-import { PageLinks } from '@/components/PageLinks'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { Border } from '@/components/Border'
-import clsx from 'clsx'
+import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { Container } from '@/components/Container'
-import { GridPattern } from '@/components/GridPattern'
 import { StylizedImage } from '@/components/StylizedImage'
 import { List, ListItem } from '@/components/List'
 
 import farm from '@/images/farm.jpg'
-
 
 export const metadata: Metadata = {
     title: 'Services',
