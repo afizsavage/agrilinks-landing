@@ -23,12 +23,12 @@ export function Border<T extends React.ElementType = 'div'>({
         className,
         'relative before:absolute after:absolute',
         invert
-          ? 'before:bg-white after:bg-white/10'
-          : 'before:bg-green-900 after:bg-green-900/10',
+          ? 'lg:before:bg-white lg:after:bg-white/10'
+          : 'lg:before:bg-green-900 lg:after:bg-green-900/10',
         position === 'top' &&
-        'before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px',
+        'lg:before:left-0 lg:before:top-0 lg:before:h-px lg:before:w-6 lg:after:left-8 lg:after:right-0 lg:after:top-0 lg:after:h-px',
         position === 'left' &&
-        'before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px',
+        'lg:before:left-0 lg:before:top-0 lg:before:h-6 lg:before:w-px lg:after:bottom-0 lg:after:left-0 lg:after:top-8 lg:after:w-px',
       )}
       {...props}
     />

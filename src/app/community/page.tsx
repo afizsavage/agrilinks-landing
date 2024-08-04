@@ -9,7 +9,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { Container } from '@/components/Container'
 
 import farm from '@/images/farm.jpg'
-import farmer from '@/images/farmer.jpg'
+import farmer from '@/images/photos/image-1.jpg'
 
 export const metadata: Metadata = {
     title: 'Community',
@@ -37,7 +37,7 @@ export default async function Community() {
                             <article style={{ position: 'relative' }} >
                                 <Border
                                     position="left"
-                                    className="relative flex flex-col items-start pl-8"
+                                    className="relative flex flex-col items-start lg:pl-8 "
                                 >
                                     <div style={{
                                         position: 'relative',
@@ -45,7 +45,7 @@ export default async function Community() {
                                         height: 300
                                     }}>
                                         <Image
-                                            alt="farmer image"
+                                            alt="farmer-image"
                                             src={farmer}
                                             fill={true}
                                             style={{ top: 0, left: 0 }}
@@ -69,7 +69,7 @@ export default async function Community() {
                             <article >
                                 <Border
                                     position="left"
-                                    className="relative flex flex-col items-start pl-8"
+                                    className="relative flex flex-col items-start lg:pl-8 "
                                 >
                                     <div style={{
                                         position: 'relative',
@@ -78,7 +78,7 @@ export default async function Community() {
                                     }}>
 
                                         <Image
-                                            alt=""
+                                            alt="buyers-image"
                                             src={farm}
                                             fill={true}
                                             style={{ top: 0, left: 0 }}
